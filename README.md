@@ -87,12 +87,17 @@ Interactive chatbot that provides personalized agricultural guidance.
 
 ---
 
-## Project Status
+## Project Structure
 
-Currently under development as part of an AI-Assisted Full Stack Development Internship.
-
----
-
-## Author
-
-Madhav Goel
+```text
+HarvestIQ
+│
+├── backend
+│
+├── docs
+│   └── project-plan.md
+│
+├── frontend
+│
+└── README.md
+```
