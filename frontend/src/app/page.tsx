@@ -1,3 +1,11 @@
+import Navbar from "../components/navbar";
+import Hero from "../components/hero";
+
 export default function Home() {
-  return <h1>HarvestIQ</h1>;
+  return (
+    <>
+      <Navbar />
+      <Hero />
+    </>
+  );
 }
