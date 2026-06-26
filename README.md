@@ -101,3 +101,106 @@ HarvestIQ
 │
 └── README.md
 ```
+---
+
+## Backend Setup
+
+### Install Dependencies
+
+```bash
+cd backend
+npm install
+```
+
+### Run the Backend Server
+
+```bash
+node server.js
+```
+
+The backend will run at:
+
+```text
+http://localhost:5000
+```
+
+---
+
+## Frontend Setup
+
+### Install Dependencies
+
+```bash
+cd frontend
+npm install
+```
+
+### Run the Frontend
+
+```bash
+npm run dev
+```
+
+The frontend will run at:
+
+```text
+http://localhost:3000
+```
+
+---
+
+## REST API Endpoints
+
+| Method | Endpoint                                | Description                       |
+| ------ | --------------------------------------- | --------------------------------- |
+| GET    | `/api/recommendations`                  | Retrieve all crop recommendations |
+| GET    | `/api/recommendations/:id`              | Retrieve a recommendation by ID   |
+| GET    | `/api/recommendations/search?crop=rice` | Search recommendations by crop    |
+| POST   | `/api/recommendations`                  | Create a new recommendation       |
+| PUT    | `/api/recommendations/:id`              | Update an existing recommendation |
+| DELETE | `/api/recommendations/:id`              | Delete a recommendation           |
+
+---
+
+## Current Progress
+
+### Frontend
+
+* Landing Page
+* Login Page
+* Signup Page
+* Dashboard
+* Recommendation Page
+* Reusable UI Components
+
+### Backend
+
+* Express.js Server
+* REST API
+* CRUD Operations
+* Crop Search Endpoint
+* Frontend–Backend Integration
+
+---
+
+## Running the Project
+
+### Start Backend
+
+```bash
+cd backend
+node server.js
+```
+
+### Start Frontend
+
+```bash
+cd frontend
+npm run dev
+```
+
+Open the application in your browser:
+
+```text
+http://localhost:3000
+```
