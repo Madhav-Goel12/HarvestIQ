@@ -15,21 +15,21 @@ export default function DashboardPage() {
       title: "Weather Monitoring",
       description:
         "View real-time weather updates and forecasts for your region.",
-      link: "#",
+      link: "/weather",
       icon: "☁️",
     },
     {
       title: "Yield Prediction",
       description:
         "Predict crop yield using machine learning insights.",
-      link: "#",
+      link: "/yield",
       icon: "📈",
     },
     {
       title: "Market Insights",
       description:
         "Track crop prices and market demand trends.",
-      link: "#",
+      link: "/market",
       icon: "📊",
     },
   ];
@@ -70,7 +70,7 @@ export default function DashboardPage() {
 
                 <Link
                   href={item.link}
-                  className="bg-green-600 text-white px-5 py-2 rounded-lg hover:bg-green-700"
+                  className="inline-block bg-green-600 text-white px-5 py-2 rounded-lg hover:bg-green-700 transition"
                 >
                   Explore
                 </Link>
