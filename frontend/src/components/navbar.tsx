@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ThemeToggle from "./theme-toggle";
 
 export default function Navbar() {
   return (
@@ -11,18 +12,28 @@ export default function Navbar() {
           </h1>
         </Link>
 
-        <div className="flex gap-8 items-center">
+        <div className="flex gap-6 items-center">
+
           <Link href="/">Home</Link>
+
           <Link href="/About">About</Link>
+
           <Link href="/dashboard">Dashboard</Link>
-          <Link href="/login">Login</Link>
+
+          {/* Dark Mode Toggle */}
+          <ThemeToggle />
+
+          <Link href="/login">
+            Login
+          </Link>
 
           <Link
             href="/Signup"
-            className="bg-green-600 text-white px-5 py-2 rounded-lg"
+            className="bg-green-600 text-white px-5 py-2 rounded-lg hover:bg-green-700 transition"
           >
             Sign Up
           </Link>
+
         </div>
       </div>
     </nav>
